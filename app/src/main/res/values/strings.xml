@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Calendar</string>
+    <string name="Open">NavBar</string>
+    <string name="Close">NavBar</string>
+    <string name="Button1">Get Current Time</string>
+
+    <!--Hour-->
+    <string name="hour1">Giờ Tí</string>
+    <string name="hour2">Giờ Sửu</string>
+    <string name="hour3">Giờ Dần</string>
+    <string name="hour4">Giờ Mão</string>
+    <string name="hour5">Giờ Thìn</string>
+    <string name="hour6">Giờ Tị</string>
+    <string name="hour7">Giờ Ngọ</string>
+    <string name="hour8">Giờ Mùi</string>
+    <string name="hour9">Giờ Thân</string>
+    <string name="hour10">Giờ Dậu</string>
+    <string name="hour11">Giờ Tuất</string>
+    <string name="hour12">Giờ </string>
 </resources>
