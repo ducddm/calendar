@@ -16,5 +16,30 @@
     <string name="hour9">Giờ Thân</string>
     <string name="hour10">Giờ Dậu</string>
     <string name="hour11">Giờ Tuất</string>
-    <string name="hour12">Giờ </string>
+    <string name="hour12">Giờ Hợi</string>
+
+    <!--Day-->
+    <string name="sat">Thứ 7</string>
+    <string name="sun">Chủ Nhật</string>
+    <string name="mon">Thứ 2</string>
+    <string name="tue">Thứ 3</string>
+    <string name="wed">Thứ 4</string>
+    <string name="thu">Thứ 5</string>
+    <string name="fri">Thứ 6</string>
+
+    <!--Star-->
+    <string name="s1">Ma Kết</string>
+    <string name="s2">Bảo Bình</string>
+    <string name="s3">Song Ngư</string>
+    <string name="s4">Bạch Dương</string>
+    <string name="s5">Kim Ngưu</string>
+    <string name="s6">Song Tử</string>
+    <string name="s7">Cự Giải</string>
+    <string name="s8">Sư Tử</string>
+    <string name="s9">Xử Nữ</string>
+    <string name="s10">Thiên Bình</string>
+    <string name="s11">Bọ Cạp</string>
+    <string name="s12">Nhân </string>
+
+
 </resources>
