@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/myprofile"
-        android:title="My Profile"
-        android:icon="@drawable/ic_person_black_24dp">
+        android:id="@+id/currenttime"
+        android:title="Current Time"
+        android:icon="@drawable/ic_home_black_24dp">
 
     </item>
     <item
-        android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_settings_black_24dp">
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp">
 
     </item>
+
     <item
-        android:id="@+id/editprofile"
-        android:title="Edit Profile"
-        android:icon="@drawable/ic_edit_black_24dp">
+        android:id="@+id/aboutme"
+        android:title="About me"
+        android:icon="@drawable/ic_person_black_24dp" >
 
     </item>
 

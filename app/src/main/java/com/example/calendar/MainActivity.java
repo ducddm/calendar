@@ -38,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
-                if (id == R.id.myprofile) {
+                if (id == R.id.currenttime) {
                     startActivity(new Intent(MainActivity.this, CurrentTime.class));
-                    Toast.makeText(MainActivity.this,"My Profile",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Today",Toast.LENGTH_SHORT).show();
                 }
-                else if (id == R.id.settings) {
-                    Toast.makeText(MainActivity.this,"Settings",Toast.LENGTH_SHORT).show();
+                else if (id == R.id.search) {
+                    Toast.makeText(MainActivity.this,"Search",Toast.LENGTH_SHORT).show();
                 }
-                if (id == R.id.editprofile) {
-                    Toast.makeText(MainActivity.this,"Edit Profile",Toast.LENGTH_SHORT).show();
+                if (id == R.id.aboutme) {
+                    Toast.makeText(MainActivity.this,"About me",Toast.LENGTH_SHORT).show();
                 }
                 return true;
             }

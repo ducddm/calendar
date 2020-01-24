@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Calendar</string>
+    <string name="app_name">Lịch vạn niên </string>
     <string name="Open">NavBar</string>
     <string name="Close">NavBar</string>
     <string name="Button1">Get Current Time</string>
@@ -28,18 +28,61 @@
     <string name="fri">Thứ 6</string>
 
     <!--Star-->
-    <string name="s1">Ma Kết</string>
-    <string name="s2">Bảo Bình</string>
-    <string name="s3">Song Ngư</string>
-    <string name="s4">Bạch Dương</string>
-    <string name="s5">Kim Ngưu</string>
-    <string name="s6">Song Tử</string>
-    <string name="s7">Cự Giải</string>
-    <string name="s8">Sư Tử</string>
-    <string name="s9">Xử Nữ</string>
-    <string name="s10">Thiên Bình</string>
-    <string name="s11">Bọ Cạp</string>
-    <string name="s12">Nhân </string>
+    <string name="s1">Cung Ma Kết</string>
+    <string name="s2">Cung Bảo Bình</string>
+    <string name="s3">Cung Song Ngư</string>
+    <string name="s4">Cung Bạch Dương</string>
+    <string name="s5">Cung Kim Ngưu</string>
+    <string name="s6">Cung Song Tử</string>
+    <string name="s7">Cung Cự Giải</string>
+    <string name="s8">Cung Sư Tử</string>
+    <string name="s9">Cung Xử Nữ</string>
+    <string name="s10">Cung Thiên Bình</string>
+    <string name="s11">Cung Bọ Cạp</string>
+    <string name="s12">Cung Nhân Mã</string>
+
+    <!--Can-->
+    <string name="c1">Giáp</string>
+    <string name="c2">Ất</string>
+    <string name="c3">Bính</string>
+    <string name="c4">Đinh</string>
+    <string name="c5">Mậu</string>
+    <string name="c6">Kỷ</string>
+    <string name="c7">Canh</string>
+    <string name="c8">Tân</string>
+    <string name="c9">Nhâm</string>
+    <string name="c10">Quý</string>
+
+    <!--Chi-->
+    <string name="ch1">Tý</string>
+    <string name="ch2">Sửu</string>
+    <string name="ch3">Dần</string>
+    <string name="ch4">Mão</string>
+    <string name="ch5">Thìn</string>
+    <string name="ch6">Tị</string>
+    <string name="ch7">Ngọ</string>
+    <string name="ch8">Mùi</string>
+    <string name="ch9">Thân</string>
+    <string name="ch10">Dậu</string>
+    <string name="ch11">Tuất</string>
+    <string name="ch12">Hợi</string>
+
+    <!--Giờ Hoàng Đạo-->
+
+    <string name="hh">Giờ Hoàng Đạo</string>
+    <string name="h1">Giờ Tý, Sửu, Thìn, Tị, Mùi, Tuất</string>
+    <string name="h2">Giờ Tý, Dần, Mão, Ngọ, Mùi, Dậu</string>
+    <string name="h3">Giờ Dần, Thìn, Tị, Thân, Dậu, Hợi</string>
+    <string name="h4">Giờ Sửu, Thìn, Ngọ, Mùi, Tuất, Hợi</string>
+    <string name="h5">Giờ Tý, Sửu, Mão, Ngọ, Thân, Dậu</string>
+    <string name="h6">Giờ Dần, Mão, Thìn, Thân, Tuất, Hợi</string>
+
+
+    <!--General-->
+    <string name="y">Năm</string>
+    <string name="m">Tháng</string>
+    <string name="d">Ngày</string>
+    <string name="h">Giờ</string>
 
 
 </resources>
