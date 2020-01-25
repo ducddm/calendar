@@ -84,5 +84,8 @@
     <string name="d">Ngày</string>
     <string name="h">Giờ</string>
 
+    <!--Button-->
+    <string name="button">Chọn</string>
+
 
 </resources>

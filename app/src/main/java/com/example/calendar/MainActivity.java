@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Today",Toast.LENGTH_SHORT).show();
                 }
                 else if (id == R.id.search) {
+                    startActivity(new Intent(MainActivity.this,SearchActivity.class));
                     Toast.makeText(MainActivity.this,"Search",Toast.LENGTH_SHORT).show();
                 }
                 if (id == R.id.aboutme) {
