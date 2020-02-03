@@ -83,12 +83,42 @@
     <string name="m">Tháng</string>
     <string name="d">Ngày</string>
     <string name="h">Giờ</string>
-
+    <string name="nh">Nhóm nguyên tố</string>
+    <string name="ha">Hành tinh quản chiếu</string>
+    <string name="th">Thần bảo hộ</string>
     <!--Button-->
     <string name="button">Chọn</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--4 nhóm nguyên tố-->
+    <string name="k">Khí</string>
+    <string name="l">Lửa</string>
+    <string name="n">Nước</string>
+    <string name="dat">Đất</string>
 
+    <!--Hành tinh-->
+    <string name="st1">Sao Hỏa</string>
+    <string name="st2">Sao Kim</string>
+    <string name="st3">Sao Thủy</string>
+    <string name="st4">Mặt Trăng</string>
+    <string name="st5">Mặt Trời</string>
+    <string name="st6">Sao Diêm Vương</string>
+    <string name="st7">Sao Mộc</string>
+    <string name="st8">Sao Thổ</string>
+    <string name="st9">Sao Thiên Vương</string>
+    <string name="st10">Sao Hải Vương</string>
 
+    <!--Thần bảo hộ-->
+    <string name="a1">Thần chiến tranh Ares</string>
+    <string name="a2">Thần tình yêu và sắc đẹp Aphrodite</string>
+    <string name="a3">Thần thông tin Hermes</string>
+    <string name="a4">Thần hôn nhân gia đình Hera</string>
+    <string name="a5">Thần nông nghiệp Demeter</string>
+    <string name="a6">Thần mặt trời Apollo</string>
+    <string name="a7">Thần trí tuệ Athena</string>
+    <string name="a8">Thần cai quản địa ngục Hades</string>
+    <string name="a9">Thần Zeus</string>
+    <string name="a10">Nhân Mã thông thái Chiron</string>
+    <string name="a11">Thần thời gian Cronos</string>
+    <string name="a12">Thần bầu trời Uranus</string>
+    <string name="a13">Thần biển cả Poseidon</string>
 </resources>
