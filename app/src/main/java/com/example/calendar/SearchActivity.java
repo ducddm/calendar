@@ -80,12 +80,22 @@ public class SearchActivity extends AppCompatActivity {
         TextView ang = findViewById(R.id.ang);
         TextView ang1 = findViewById(R.id.ang1);
 
+        TextView nhom = findViewById(R.id.nhom);
+        TextView han = findViewById(R.id.hanh);
+        TextView than = findViewById(R.id.than);
+
+        nhom.setText(R.string.nh);
+        han.setText(R.string.ha);
+        than.setText(R.string.th);
+
         switch (m) {
             case 1: if (da<20) {
                 star.setImageResource(R.drawable.capricorn);
                 st.setText(R.string.s1);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st8);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a11);
             }
             else {
@@ -113,6 +123,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s3);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st10);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a13);
             }
                 break;
@@ -122,6 +134,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s3);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st10);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a13);
 
             }
@@ -130,6 +144,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s4);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st1);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a1);
             }
                 break;
@@ -139,6 +155,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s4);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st1);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a1);
             }
             else {
@@ -146,6 +164,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s5);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st2);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a2);
             }
                 break;
@@ -155,6 +175,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s5);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st2);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a2);
             }
             else {
@@ -162,6 +184,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s6);
                 ele.setText(R.string.k);
                 pla.setText(R.string.st3);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a3);
             }
                 break;
@@ -171,6 +195,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s6);
                 ele.setText(R.string.k);
                 pla.setText(R.string.st3);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a3);
             }
             else {
@@ -178,6 +204,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s7);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st4);
+                pla1.setText("");
                 ang.setText(R.string.a4);
                 ang1.setText(R.string.a5);
             }
@@ -188,6 +215,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s7);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st4);
+                pla1.setText("");
                 ang.setText(R.string.a4);
                 ang1.setText(R.string.a5);
             }
@@ -196,6 +224,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s8);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st5);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a6);
             }
                 break;
@@ -205,6 +235,8 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s8);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st5);
+                pla1.setText("");
+                ang1.setText("");
                 ang.setText(R.string.a6);
             }
             else {
@@ -212,6 +244,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s9);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st3);
+                pla1.setText("");
                 ang.setText(R.string.a3);
                 ang.setText(R.string.a5);
             }
@@ -222,6 +255,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s9);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st3);
+                pla1.setText("");
                 ang.setText(R.string.a3);
                 ang.setText(R.string.a5);
             }
@@ -230,6 +264,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s10);
                 ele.setText(R.string.k);
                 pla.setText(R.string.st2);
+                pla1.setText("");
                 ang.setText(R.string.a7);
                 ang1.setText(R.string.a2);
             }
@@ -240,6 +275,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s10);
                 ele.setText(R.string.k);
                 pla.setText(R.string.st2);
+                pla1.setText("");
                 ang.setText(R.string.a7);
                 ang1.setText(R.string.a2);
             }
@@ -248,6 +284,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s11);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st6);
+                pla1.setText("");
                 ang.setText(R.string.a8);
                 ang1.setText(R.string.a1);
             }
@@ -258,6 +295,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s11);
                 ele.setText(R.string.n);
                 pla.setText(R.string.st6);
+                pla1.setText("");
                 ang.setText(R.string.a8);
                 ang1.setText(R.string.a1);
             }
@@ -266,6 +304,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s12);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st7);
+                pla1.setText("");
                 ang.setText(R.string.a9);
                 ang1.setText(R.string.a10);
             }
@@ -276,6 +315,7 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s12);
                 ele.setText(R.string.l);
                 pla.setText(R.string.st7);
+                pla1.setText("");
                 ang.setText(R.string.a9);
                 ang1.setText(R.string.a10);
             }
@@ -284,7 +324,9 @@ public class SearchActivity extends AppCompatActivity {
                 st.setText(R.string.s1);
                 ele.setText(R.string.dat);
                 pla.setText(R.string.st8);
+                pla1.setText("");
                 ang.setText(R.string.a11);
+                ang1.setText("");
 
             }
                 break;
