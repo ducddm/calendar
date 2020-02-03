@@ -70,12 +70,12 @@
     <!--Giờ Hoàng Đạo-->
 
     <string name="hh">Giờ Hoàng Đạo</string>
-    <string name="h1">Giờ Tý, Sửu, Thìn, Tị, Mùi, Tuất</string>
-    <string name="h2">Giờ Tý, Dần, Mão, Ngọ, Mùi, Dậu</string>
-    <string name="h3">Giờ Dần, Thìn, Tị, Thân, Dậu, Hợi</string>
-    <string name="h4">Giờ Sửu, Thìn, Ngọ, Mùi, Tuất, Hợi</string>
-    <string name="h5">Giờ Tý, Sửu, Mão, Ngọ, Thân, Dậu</string>
-    <string name="h6">Giờ Dần, Mão, Thìn, Thân, Tuất, Hợi</string>
+    <string name="h1">Tý, Sửu, Thìn, Tị, Mùi, Tuất</string>
+    <string name="h2">Tý, Dần, Mão, Ngọ, Mùi, Dậu</string>
+    <string name="h3">Dần, Thìn, Tị, Thân, Dậu, Hợi</string>
+    <string name="h4">Sửu, Thìn, Ngọ, Mùi, Tuất, Hợi</string>
+    <string name="h5">Tý, Sửu, Mão, Ngọ, Thân, Dậu</string>
+    <string name="h6">Dần, Mão, Thìn, Thân, Tuất, Hợi</string>
 
 
     <!--General-->
@@ -86,6 +86,9 @@
 
     <!--Button-->
     <string name="button">Chọn</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
