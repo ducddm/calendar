@@ -88,6 +88,17 @@ public class SearchActivity extends AppCompatActivity {
         han.setText(R.string.ha);
         than.setText(R.string.th);
 
+        TextView tc = findViewById(R.id.tc);
+        TextView tcr = findViewById(R.id.tcr);
+
+        TextView qh11 = findViewById(R.id.qh11);
+        TextView qh12 = findViewById(R.id.qh12);
+
+        TextView qh21 = findViewById(R.id.qh21);
+        TextView qh22 = findViewById(R.id.qh22);
+
+        TextView qh31 = findViewById(R.id.qh31);
+
         switch (m) {
             case 1: if (da<20) {
                 star.setImageResource(R.drawable.capricorn);
@@ -97,6 +108,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a11);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa5);
+                qh12.setText(R.string.sa9);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa10);
+                qh31.setText(R.string.sa7);
             }
             else {
                 star.setImageResource(R.drawable.aquarius);
@@ -106,6 +124,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText(R.string.st9);
                 ang.setText(R.string.a11);
                 ang1.setText(R.string.a12);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa6);
+                qh12.setText(R.string.sa10);
+                qh21.setText(R.string.sa12);
+                qh22.setText(R.string.sa11);
+                qh31.setText(R.string.sa8);
             }
                 break;
 
@@ -117,6 +142,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText(R.string.st9);
                 ang.setText(R.string.a11);
                 ang1.setText(R.string.a12);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa6);
+                qh12.setText(R.string.sa10);
+                qh21.setText(R.string.sa12);
+                qh22.setText(R.string.sa11);
+                qh31.setText(R.string.sa8);
             }
             else {
                 star.setImageResource(R.drawable.pisces);
@@ -126,6 +158,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a13);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa7);
+                qh12.setText(R.string.sa11);
+                qh21.setText(R.string.sa6);
+                qh22.setText(R.string.sa12);
+                qh31.setText(R.string.sa9);
             }
                 break;
 
@@ -137,6 +176,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a13);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa7);
+                qh12.setText(R.string.sa11);
+                qh21.setText(R.string.sa6);
+                qh22.setText(R.string.sa12);
+                qh31.setText(R.string.sa9);
 
             }
             else {
@@ -147,6 +193,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a1);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa8);
+                qh12.setText(R.string.sa12);
+                qh21.setText(R.string.sa7);
+                qh22.setText(R.string.sa1);
+                qh31.setText(R.string.sa10);
             }
                 break;
 
@@ -158,6 +211,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a1);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa8);
+                qh12.setText(R.string.sa12);
+                qh21.setText(R.string.sa7);
+                qh22.setText(R.string.sa1);
+                qh31.setText(R.string.sa10);
             }
             else {
                 star.setImageResource(R.drawable.taurus);
@@ -167,6 +227,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a2);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa9);
+                qh12.setText(R.string.sa1);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa8);
+                qh31.setText(R.string.sa11);
             }
                 break;
 
@@ -178,6 +245,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a2);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa9);
+                qh12.setText(R.string.sa1);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa8);
+                qh31.setText(R.string.sa11);
             }
             else {
                 star.setImageResource(R.drawable.gemini);
@@ -187,6 +261,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a3);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa10);
+                qh12.setText(R.string.sa2);
+                qh21.setText(R.string.sa9);
+                qh22.setText(R.string.sa3);
+                qh31.setText(R.string.sa12);
             }
                 break;
 
@@ -198,6 +279,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a3);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa10);
+                qh12.setText(R.string.sa2);
+                qh21.setText(R.string.sa9);
+                qh22.setText(R.string.sa3);
+                qh31.setText(R.string.sa12);
             }
             else {
                 star.setImageResource(R.drawable.cancer);
@@ -207,6 +295,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a4);
                 ang1.setText(R.string.a5);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa11);
+                qh12.setText(R.string.sa3);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa10);
+                qh31.setText(R.string.sa1);
             }
                 break;
 
@@ -218,6 +313,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a4);
                 ang1.setText(R.string.a5);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa11);
+                qh12.setText(R.string.sa3);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa10);
+                qh31.setText(R.string.sa1);
             }
             else {
                 star.setImageResource(R.drawable.leo);
@@ -227,6 +329,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a6);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa4);
+                qh12.setText(R.string.sa12);
+                qh21.setText(R.string.sa5);
+                qh22.setText(R.string.sa11);
+                qh31.setText(R.string.sa2);
             }
                 break;
 
@@ -238,6 +347,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang1.setText("");
                 ang.setText(R.string.a6);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa4);
+                qh12.setText(R.string.sa12);
+                qh21.setText(R.string.sa5);
+                qh22.setText(R.string.sa11);
+                qh31.setText(R.string.sa2);
             }
             else {
                 star.setImageResource(R.drawable.virgo);
@@ -247,6 +363,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a3);
                 ang.setText(R.string.a5);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa1);
+                qh12.setText(R.string.sa5);
+                qh21.setText(R.string.sa12);
+                qh22.setText(R.string.sa6);
+                qh31.setText(R.string.sa3);
             }
                 break;
 
@@ -258,6 +381,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a3);
                 ang.setText(R.string.a5);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa1);
+                qh12.setText(R.string.sa5);
+                qh21.setText(R.string.sa12);
+                qh22.setText(R.string.sa6);
+                qh31.setText(R.string.sa3);
             }
             else {
                 star.setImageResource(R.drawable.libra);
@@ -267,6 +397,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a7);
                 ang1.setText(R.string.a2);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa6);
+                qh12.setText(R.string.sa2);
+                qh21.setText(R.string.sa7);
+                qh22.setText(R.string.sa1);
+                qh31.setText(R.string.sa4);
             }
                 break;
 
@@ -278,6 +415,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a7);
                 ang1.setText(R.string.a2);
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa6);
+                qh12.setText(R.string.sa2);
+                qh21.setText(R.string.sa7);
+                qh22.setText(R.string.sa1);
+                qh31.setText(R.string.sa4);
             }
             else {
                 star.setImageResource(R.drawable.scorpio);
@@ -287,6 +431,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a8);
                 ang1.setText(R.string.a1);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa3);
+                qh12.setText(R.string.sa7);
+                qh21.setText(R.string.sa8);
+                qh22.setText(R.string.sa2);
+                qh31.setText(R.string.sa5);
             }
                 break;
 
@@ -298,6 +449,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a8);
                 ang1.setText(R.string.a1);
+                tc.setText(R.string.tc2);
+                tcr.setText(R.string.tc22);
+                qh11.setText(R.string.sa3);
+                qh12.setText(R.string.sa7);
+                qh21.setText(R.string.sa8);
+                qh22.setText(R.string.sa2);
+                qh31.setText(R.string.sa5);
             }
             else {
                 star.setImageResource(R.drawable.sagittarius);
@@ -307,6 +465,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a9);
                 ang1.setText(R.string.a10);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa4);
+                qh12.setText(R.string.sa8);
+                qh21.setText(R.string.sa9);
+                qh22.setText(R.string.sa3);
+                qh31.setText(R.string.sa8);
             }
                 break;
 
@@ -318,6 +483,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a9);
                 ang1.setText(R.string.a10);
+                tc.setText(R.string.tc3);
+                tcr.setText(R.string.tc33);
+                qh11.setText(R.string.sa4);
+                qh12.setText(R.string.sa8);
+                qh21.setText(R.string.sa9);
+                qh22.setText(R.string.sa3);
+                qh31.setText(R.string.sa8);
             }
             else {
                 star.setImageResource(R.drawable.capricorn);
@@ -327,7 +499,13 @@ public class SearchActivity extends AppCompatActivity {
                 pla1.setText("");
                 ang.setText(R.string.a11);
                 ang1.setText("");
-
+                tc.setText(R.string.tc1);
+                tcr.setText(R.string.tc11);
+                qh11.setText(R.string.sa5);
+                qh12.setText(R.string.sa9);
+                qh21.setText(R.string.sa4);
+                qh22.setText(R.string.sa10);
+                qh31.setText(R.string.sa7);
             }
                 break;
         }

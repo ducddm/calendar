@@ -121,4 +121,32 @@
     <string name="a11">Thần thời gian Cronos</string>
     <string name="a12">Thần bầu trời Uranus</string>
     <string name="a13">Thần biển cả Poseidon</string>
+
+    <!--Tính chất-->
+    <string name="tc1">Thống lĩnh</string>
+    <string name="tc11">Ý chí mạnh mẽ, có khả năng lãnh đạo, năng động, là người tiên phong, có động lực, không ngại thử thách</string>
+    <string name="tc2">Cố định</string>
+    <string name="tc22">Kiên định, kỹ lưỡng, dai dẳng, nhất quán, nhiệt huyết, trung thành</string>
+    <string name="tc3">Linh hoạt</string>
+    <string name="tc33">Dễ thay đổi, hiếu động, khả năng thích nghi cao, không cứng nhắc, dễ tiếp thu</string>
+
+    <!--Mối quan hệ-->
+    <string name="va">và</string>
+    <string name="qh1">Phát huy tốt nhất khi ở cùng với</string>
+    <string name="qh2">Có khoảng thời gian khó khăn nếu ở cùng với</string>
+    <string name="qh3">Chòm sao tương hỗ</string>
+
+    <!--Sao viết tắt-->
+    <string name="sa1">Ma Kết</string>
+    <string name="sa2">Bảo Bình</string>
+    <string name="sa3">Song Ngư</string>
+    <string name="sa4">Bạch Dương</string>
+    <string name="sa5">Kim Ngưu</string>
+    <string name="sa6">Song Tử</string>
+    <string name="sa7">Cự Giải</string>
+    <string name="sa8">Sư Tử</string>
+    <string name="sa9">Xử Nữ</string>
+    <string name="sa10">Thiên Bình</string>
+    <string name="sa11">Bọ Cạp</string>
+    <string name="sa12">Nhân Mã</string>
 </resources>
