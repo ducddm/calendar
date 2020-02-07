@@ -149,4 +149,43 @@
     <string name="sa10">Thiên Bình</string>
     <string name="sa11">Bọ Cạp</string>
     <string name="sa12">Nhân Mã</string>
+
+    <!--Ngũ hành-->
+    <string name="kim">Kim</string>
+    <string name="moc">Mộc</string>
+    <string name="thuy">Thủy</string>
+    <string name="hoa">Hỏa</string>
+    <string name="tho">Thổ</string>
+
+    <!--60 hoa giáp tý-->
+    <string name="hh1">Gỗ thạch lựu</string>
+    <string name="hh2">Kim trang sức</string>
+    <string name="hh3">Đất trên tường</string>
+    <string name="hh4">Gỗ tùng bách</string>
+    <string name="hh5">Kim giá đèn</string>
+    <string name="hh6">Đất bên đường</string>
+    <string name="hh7">Nước biển lớn</string>
+    <string name="hh8">Gỗ cây dâu</string>
+    <string name="hh9">Kim đất mỏng</string>
+    <string name="hh10">Nước sông dài</string>
+    <string name="hh11">Gỗ dương liễu</string>
+    <string name="hh12">Kim lưỡi kiếm</string>
+    <string name="hh13">Kim trong biển</string>
+    <string name="hh14">Nước khe lớn</string>
+    <string name="hh15">Hỏa ngọn đèn</string>
+    <string name="hh16">Kim trong cát</string>
+    <string name="hh17">Nước trong suối</string>
+    <string name="hh18">Hỏa trên núi</string>
+    <string name="hh19">Hỏa trong lò</string>
+    <string name="hh20">Thổ trong cát</string>
+    <string name="hh21">Nước trên trời</string>
+    <string name="hh22">Hỏa chân núi</string>
+    <string name="hh23">Đất mái nhà</string>
+    <string name="hh24">Nước dưới khe</string>
+    <string name="hh25">Gỗ rừng xanh</string>
+    <string name="hh26">Hỏa trên trời</string>
+    <string name="hh27">Đất dịch chuyển</string>
+    <string name="hh28">Cây đồng bằng</string>
+    <string name="hh29">Hỏa sấm sét</string>
+    <string name="hh30">Đất tường thành</string>
 </resources>
