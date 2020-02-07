@@ -5,15 +5,21 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class SearchActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class SearchActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     DatePicker picker;
     Calculation calcu;
@@ -24,6 +30,11 @@ public class SearchActivity extends AppCompatActivity {
 
     TextView solar;
     TextView lunar;
+    TextView hhhh;
+
+    String gio;
+
+    private Spinner spinner;
 
 
     @Override
@@ -31,6 +42,16 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner.setOnItemSelectedListener(this);
+            // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
+                R.array.hhh, android.R.layout.simple_spinner_item);
+            // Specify the layout to use when the list of choices appears
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            // Apply the adapter to the spinner
+        spinner.setAdapter(adapter1);
 
 
         HomeFragmentPaperAdapter adapter = new HomeFragmentPaperAdapter(getSupportFragmentManager());
@@ -42,12 +63,32 @@ public class SearchActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
     }
 
+    public void onItemSelected(AdapterView<?> parent, View view,
+                               int pos, long id) {
+
+        gio = (String) parent.getItemAtPosition(pos);
+
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
+    }
+
+
+
+
+
     public void clickme(View view){
         picker = findViewById(R.id.picker);
         button = findViewById(R.id.button);
 
         solar = findViewById(R.id.solar);
         lunar = findViewById(R.id.lunar);
+
+        hhhh = findViewById(R.id.qq);
+        hhhh.setText(gio);
+
+
 
 
 

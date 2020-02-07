@@ -188,4 +188,21 @@
     <string name="hh28">Cây đồng bằng</string>
     <string name="hh29">Hỏa sấm sét</string>
     <string name="hh30">Đất tường thành</string>
+
+    <!--Giờ-->
+    <string name="choosehour">Chọn giờ</string>
+    <string-array name="hhh">
+        <item>Giờ Tí</item>
+        <item>Giờ Sửu</item>
+        <item>Giờ Dần</item>
+        <item>Giờ Mão</item>
+        <item>Giờ Thìn</item>
+        <item>Giờ Tị</item>
+        <item>Giờ Ngọ</item>
+        <item>Giờ Mùi</item>
+        <item>Giờ Thân</item>
+        <item>Giờ Dậu</item>
+        <item>Giờ Tuất</item>
+        <item>Giờ Hợi</item>
+    </string-array>
 </resources>
