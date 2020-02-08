@@ -4,6 +4,11 @@
     <string name="Close">NavBar</string>
     <string name="Button1">Get Current Time</string>
 
+    <!--Menu-->
+    <string name="menu1">Hiện tại</string>
+    <string name="menu2">Tìm kiếm</string>
+    <string name="menu3">Người phát triển</string>
+
     <!--Hour-->
     <string name="hour1">Giờ Tí</string>
     <string name="hour2">Giờ Sửu</string>
@@ -192,17 +197,17 @@
     <!--Giờ-->
     <string name="choosehour">Chọn giờ</string>
     <string-array name="hhh">
-        <item>Giờ Tí</item>
-        <item>Giờ Sửu</item>
-        <item>Giờ Dần</item>
-        <item>Giờ Mão</item>
-        <item>Giờ Thìn</item>
-        <item>Giờ Tị</item>
-        <item>Giờ Ngọ</item>
-        <item>Giờ Mùi</item>
-        <item>Giờ Thân</item>
-        <item>Giờ Dậu</item>
-        <item>Giờ Tuất</item>
-        <item>Giờ Hợi</item>
+        <item>Giờ Tí (23h-1h)</item>
+        <item>Giờ Sửu (1h-3h)</item>
+        <item>Giờ Dần (3h-5h)</item>
+        <item>Giờ Mão (5h-7h)</item>
+        <item>Giờ Thìn (7h-9h)</item>
+        <item>Giờ Tị (9h-11h)</item>
+        <item>Giờ Ngọ (11h-13h)</item>
+        <item>Giờ Mùi (13h-15h)</item>
+        <item>Giờ Thân (15h-17h)</item>
+        <item>Giờ Dậu (17h-19h)</item>
+        <item>Giờ Tuất (19h-21h)</item>
+        <item>Giờ Hợi (21h-23h)</item>
     </string-array>
 </resources>

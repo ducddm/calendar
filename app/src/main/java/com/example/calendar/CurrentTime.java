@@ -155,7 +155,7 @@ public class CurrentTime extends AppCompatActivity {
         TextView day1 = findViewById(R.id.date);
         int X=calculation.MOD((int)(Calculation.UniversalToJD(d,m,y)+2.5), 7);
         switch (X){
-            case 0: day1.setText(R.string.sat); break;
+            case 7: day1.setText(R.string.sat); break;
             case 1: day1.setText(R.string.sun); break;
             case 2: day1.setText(R.string.mon); break;
             case 3: day1.setText(R.string.tue); break;
