@@ -32,7 +32,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
     TextView lunar;
     TextView hhhh;
 
-    String gio;
+    int gio;
 
     private Spinner spinner;
 
@@ -66,7 +66,20 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
     public void onItemSelected(AdapterView<?> parent, View view,
                                int pos, long id) {
 
-        gio = (String) parent.getItemAtPosition(pos);
+        switch (pos){
+            case 0: gio = 1; break;
+            case 1: gio = 2; break;
+            case 2: gio = 3; break;
+            case 3: gio = 4; break;
+            case 4: gio = 5; break;
+            case 5: gio = 6; break;
+            case 6: gio = 7; break;
+            case 7: gio = 8; break;
+            case 8: gio = 9; break;
+            case 9: gio = 10; break;
+            case 10: gio = 11; break;
+            case 11: gio = 12; break;
+        }
 
     }
 
@@ -86,7 +99,22 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         lunar = findViewById(R.id.lunar);
 
         hhhh = findViewById(R.id.qq);
-        hhhh.setText(gio);
+        switch (gio){
+            case 1: hhhh.setText(R.string.ch1); break;
+            case 2: hhhh.setText(R.string.ch2); break;
+            case 3: hhhh.setText(R.string.ch3); break;
+            case 4: hhhh.setText(R.string.ch4); break;
+            case 5: hhhh.setText(R.string.ch5); break;
+            case 6: hhhh.setText(R.string.ch6); break;
+            case 7: hhhh.setText(R.string.ch7); break;
+            case 8: hhhh.setText(R.string.ch8); break;
+            case 9: hhhh.setText(R.string.ch9); break;
+            case 10: hhhh.setText(R.string.ch10); break;
+            case 11: hhhh.setText(R.string.ch11); break;
+            case 12: hhhh.setText(R.string.ch12); break;
+
+        }
+
 
 
 
