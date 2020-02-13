@@ -324,7 +324,7 @@ public class CurrentTime extends AppCompatActivity {
         TextView h2 = findViewById(R.id.hour2);
 
 
-        if ((dcan==0) || (dcan==1)) {
+        if ((dcan==0) || (dcan==5)) {
             if ((hour==23) || (hour==0)) h1.setText(R.string.c1);
             if ((hour==1) || (hour==2)) h1.setText(R.string.c2);
             if ((hour==3) || (hour==4)) h1.setText(R.string.c3);
@@ -339,7 +339,7 @@ public class CurrentTime extends AppCompatActivity {
             if ((hour==21) || (hour==22)) h1.setText(R.string.c2);
         }
 
-        if ((dcan==2) || (dcan==3)) {
+        if ((dcan==1) || (dcan==6)) {
             if ((hour==23) || (hour==0)) h1.setText(R.string.c3);
             if ((hour==1) || (hour==2)) h1.setText(R.string.c4);
             if ((hour==3) || (hour==4)) h1.setText(R.string.c5);
@@ -354,7 +354,7 @@ public class CurrentTime extends AppCompatActivity {
             if ((hour==21) || (hour==22)) h1.setText(R.string.c4);
         }
 
-        if ((dcan==4) || (dcan==5)) {
+        if ((dcan==2) || (dcan==7)) {
             if ((hour==23) || (hour==0)) h1.setText(R.string.c5);
             if ((hour==1) || (hour==2)) h1.setText(R.string.c6);
             if ((hour==3) || (hour==4)) h1.setText(R.string.c7);
@@ -369,7 +369,7 @@ public class CurrentTime extends AppCompatActivity {
             if ((hour==21) || (hour==22)) h1.setText(R.string.c6);
         }
 
-        if ((dcan==6) || (dcan==7)) {
+        if ((dcan==3) || (dcan==8)) {
             if ((hour==23) || (hour==0)) h1.setText(R.string.c7);
             if ((hour==1) || (hour==2)) h1.setText(R.string.c8);
             if ((hour==3) || (hour==4)) h1.setText(R.string.c9);
@@ -384,7 +384,7 @@ public class CurrentTime extends AppCompatActivity {
             if ((hour==21) || (hour==22)) h1.setText(R.string.c8);
         }
 
-        if ((dcan==8) || (dcan==9)) {
+        if ((dcan==4) || (dcan==9)) {
             if ((hour==23) || (hour==0)) h1.setText(R.string.c9);
             if ((hour==1) || (hour==2)) h1.setText(R.string.c10);
             if ((hour==3) || (hour==4)) h1.setText(R.string.c1);
