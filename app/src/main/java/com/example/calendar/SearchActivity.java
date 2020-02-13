@@ -245,6 +245,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         switch (total) {
             case 1:
                 menh.setText(R.string.kim);
+                nguhanh.setImageResource(R.drawable.kim);
                 if ((yechi==0) || (yechi==1)) menhchitiet=12;
                 if ((yechi==2) || (yechi==3)) menhchitiet=2;
                 if ((yechi==4) || (yechi==5)) menhchitiet=13;
@@ -254,6 +255,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case 2:
                 menh.setText(R.string.thuy);
+                nguhanh.setImageResource(R.drawable.thuy);
                 if ((yechi==0) || (yechi==1)) menhchitiet=17;
                 if ((yechi==2) || (yechi==3)) menhchitiet=7;
                 if ((yechi==4) || (yechi==5)) menhchitiet=24;
@@ -263,6 +265,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case 3:
                 menh.setText(R.string.hoa);
+                nguhanh.setImageResource(R.drawable.hoa);
                 if ((yechi==0) || (yechi==1)) menhchitiet=22;
                 if ((yechi==2) || (yechi==3)) menhchitiet=18;
                 if ((yechi==4) || (yechi==5)) menhchitiet=29;
@@ -272,6 +275,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case 4:
                 menh.setText(R.string.tho);
+                nguhanh.setImageResource(R.drawable.tho);
                 if ((yechi==0) || (yechi==1)) menhchitiet=27;
                 if ((yechi==2) || (yechi==3)) menhchitiet=23;
                 if ((yechi==4) || (yechi==5)) menhchitiet=3;
@@ -281,6 +285,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
                 break;
             case 5:
                 menh.setText(R.string.moc);
+                nguhanh.setImageResource(R.drawable.moc);
                 if ((yechi==0) || (yechi==1)) menhchitiet=1;
                 if ((yechi==2) || (yechi==3)) menhchitiet=28;
                 if ((yechi==4) || (yechi==5)) menhchitiet=8;
