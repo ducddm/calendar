@@ -9,6 +9,10 @@
     <string name="menu2">Tìm kiếm</string>
     <string name="menu3">Người phát triển</string>
 
+    <!--Năm-->
+    <string name="nhuand">Năm nhuận dương lịch</string>
+    <string name="nhuana">Năm nhuận âm lịch</string>
+
     <!--Hour-->
     <string name="hour1">Giờ Tí</string>
     <string name="hour2">Giờ Sửu</string>
@@ -127,6 +131,9 @@
     <string name="a11">Thần thời gian Cronos</string>
     <string name="a12">Thần bầu trời Uranus</string>
     <string name="a13">Thần biển cả Poseidon</string>
+
+    <!--Giá trị rỗng-->
+    <string name="empty"></string>
 
     <!--Tính chất-->
     <string name="tc1">Thống lĩnh</string>
