@@ -66,33 +66,35 @@ public class MainActivity extends AppCompatActivity {
         int d = c.get(Calendar.DATE);
         int hour = c.get(Calendar.HOUR_OF_DAY);
 
+
+        /*Calculate*/
+
         int day[] = Calculation.Solar2Lunar(d,m,y);
 
         int da = day[0];
         int mo = day[1];
         int ye = day[2];
 
-        /*Calculate*/
         duongLich.findSolarInformation(d,m);
         int dayId = duongLich.findDay(d,m,y);
 
         int leaps = duongLich.checkLeapYear(y);
-        int leapl = amLich.checkLeapYear(da, mo, ye);
+        int leapl = amLich.checkLeapYear(ye);
 
-        int cany = amLich.findCanNam(da, mo, ye);
-        int chiy = amLich.findChiNam(da, mo, ye);
+        amLich.findCanChiNam(ye);
 
-        int canm = amLich.findCanThang(da, mo, ye);
-        int chim = amLich.findChiThang(da, mo, ye);
 
-        int cand = amLich.findCanNgay(d, m, y);
-        int chid = amLich.findChiNgay(d, m, y);
-        int imgchid = amLich.findChiNgayduongLich(d, m, y);
+        amLich.findCanThang(mo, ye);
+        amLich.findChiThang(mo);
 
-        int canh = amLich.findCanGio(hour, d, m, y);
-        int chih = amLich.findChiGio(hour);
+        amLich.findCanNgay(d, m, y);
+        amLich.findChiNgay(d, m, y);
+        amLich.findChiNgayduongLich(d, m, y);
 
-        int luckyHour = amLich.findGioHoangDao(d, m, y);
+        amLich.findCanGio(hour, d, m, y);
+        amLich.findChiGio(hour);
+
+        amLich.findGioHoangDao(d, m, y);
 
         /*Find place to put result*/
         TextView leapd = (TextView) findViewById(R.id.leapd);
@@ -138,24 +140,21 @@ public class MainActivity extends AppCompatActivity {
 
         gg3.setText(da+"/"+mo+"/"+ye);
 
-        y1.setText(cany);
-        y2.setText(chiy);
+        y1.setText(amLich.cannam);
+        y2.setText(amLich.chinam);
 
-        m1.setText(canm);
-        m2.setText(chim);
+        m1.setText(amLich.canthang);
+        m2.setText(amLich.chithang);
 
-        d1.setText(cand);
-        d2.setText(chid);
+        d1.setText(amLich.canngay);
+        d2.setText(amLich.chingay);
 
-        ngay.setImageResource(imgchid);
+        ngay.setImageResource(amLich.chingaysrc);
 
-        h1.setText(canh);
-        h2.setText(chih);
+        h1.setText(amLich.cangio);
+        h2.setText(amLich.chigio);
 
-        lh.setText(luckyHour);
-
-
-
+        lh.setText(amLich.luckyhour);
 
     }
 

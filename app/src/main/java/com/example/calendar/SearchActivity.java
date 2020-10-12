@@ -16,13 +16,19 @@ import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     DatePicker picker;
+
     Calculation calcu;
+    DuongLich duongLich = new DuongLich();
+    AmLich amLich = new AmLich();
+
     Button button;
     int da;
     int m;
@@ -88,18 +94,18 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
                                int pos, long id) {
 
         switch (pos){
-            case 0: gio = 1; break;
-            case 1: gio = 2; break;
+            case 0: gio = 23; break;
+            case 1: gio = 1; break;
             case 2: gio = 3; break;
-            case 3: gio = 4; break;
-            case 4: gio = 5; break;
-            case 5: gio = 6; break;
-            case 6: gio = 7; break;
-            case 7: gio = 8; break;
-            case 8: gio = 9; break;
-            case 9: gio = 10; break;
-            case 10: gio = 11; break;
-            case 11: gio = 12; break;
+            case 3: gio = 5; break;
+            case 4: gio = 7; break;
+            case 5: gio = 9; break;
+            case 6: gio = 11; break;
+            case 7: gio = 13; break;
+            case 8: gio = 15; break;
+            case 9: gio = 17; break;
+            case 10: gio = 19; break;
+            case 11: gio = 21; break;
         }
 
     }
@@ -110,6 +116,39 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
 
     public void clickme(View view){
 
+        /*Constant Variable*/
+
+        /*Duong Lich*/
+        TextView nhom = findViewById(R.id.nhom);
+        TextView han = findViewById(R.id.hanh);
+        TextView than = findViewById(R.id.than);
+
+        TextView va1 = findViewById(R.id.va1);
+        TextView va2 = findViewById(R.id.va2);
+
+        TextView dactrung = findViewById(R.id.dt);
+        TextView tinhcach = findViewById(R.id.tinhcach);
+
+        TextView qh1 = findViewById(R.id.qh1);
+        TextView qh2 = findViewById(R.id.qh2);
+        TextView qh3 = findViewById(R.id.qh3);
+
+        nhom.setText(R.string.nh);
+        han.setText(R.string.ha);
+        than.setText(R.string.th);
+
+        va1.setText(R.string.va);
+        va2.setText(R.string.va);
+
+        dactrung.setText(R.string.dt);
+        tinhcach.setText(R.string.tinhcach);
+
+        qh1.setText(R.string.qh1);
+        qh2.setText(R.string.qh2);
+        qh3.setText(R.string.qh3);
+
+        /*Am Lich*/
+
         nam = findViewById(R.id.y0);
         thang = findViewById(R.id.m0);
         ngay = findViewById(R.id.d0);
@@ -118,11 +157,41 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         menh = findViewById(R.id.nguhanh);
         menhchi = findViewById(R.id.menhchitiet);
 
+
         nam.setText(R.string.y);
         thang.setText(R.string.m);
         ngay.setText(R.string.d);
         ggg.setText(R.string.h);
         men.setText(R.string.menh);
+
+        /*Declare Variable*/
+
+        /*Duong Lich*/
+
+        TextView leapd = findViewById(R.id.leapd);
+        TextView thu = findViewById(R.id.thu);
+        ImageView star = findViewById(R.id.starr);
+        TextView st = findViewById(R.id.sta);
+        TextView ele = findViewById(R.id.ele);
+        TextView pla = findViewById(R.id.pla);
+        TextView pla1 = findViewById(R.id.pla1);
+        TextView ang = findViewById(R.id.ang);
+        TextView ang1 = findViewById(R.id.ang1);
+
+        TextView tc = findViewById(R.id.tc);
+        TextView tcr = findViewById(R.id.tcr);
+
+        TextView qh11 = findViewById(R.id.qh11);
+        TextView qh12 = findViewById(R.id.qh12);
+
+        TextView qh21 = findViewById(R.id.qh21);
+        TextView qh22 = findViewById(R.id.qh22);
+
+        TextView qh31 = findViewById(R.id.qh31);
+
+        /*Am Lich*/
+
+        TextView leapa = findViewById(R.id.leapa);
 
         diachi = findViewById(R.id.diachi);
         nguhanh = findViewById(R.id.anhmenh);
@@ -145,423 +214,92 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
         cangio = findViewById(R.id.hh1);
         chigio = findViewById(R.id.hh2);
 
+        /*Calculation*/
 
         da = picker.getDayOfMonth();
         m = picker.getMonth()+1;
         y = picker.getYear();
+
+        /*Duong Lich*/
+
+        duongLich.findSolarInformation(da,m);
+        int checkd = duongLich.checkLeapYear(y);
+        int day = duongLich.findDay(da,m,y);
+
+        /*Am Lich*/
+
         int d[]=calcu.Solar2Lunar(da,m,y);
-        solar.setText(da+"/"+m+"/"+y);
-        lunar.setText(d[0]+"/"+d[1]+"/"+d[2]);
 
         int ye = d[2];
-        int yecan = ye%10;
-        int yechi = ye%12;
-
-        int s1=0;
-        int s2=0;
-
-        switch (yecan){
-            case 0: cannam.setText(R.string.c7); s1=4; break;
-            case 1: cannam.setText(R.string.c8); s1=4; break;
-            case 2: cannam.setText(R.string.c9); s1=5; break;
-            case 3: cannam.setText(R.string.c10); s1=5; break;
-            case 4: cannam.setText(R.string.c1); s1=1; break;
-            case 5: cannam.setText(R.string.c2); s1=1; break;
-            case 6: cannam.setText(R.string.c3); s1=2; break;
-            case 7: cannam.setText(R.string.c4); s1=2; break;
-            case 8: cannam.setText(R.string.c5); s1=3; break;
-            case 9: cannam.setText(R.string.c6); s1=3; break;
-        }
-
-
-        switch (yechi) {
-            case 0:
-                chinam.setText(R.string.ch9);
-                diachi.setImageResource(R.drawable.monkey);
-                s2=1;
-                break;
-            case 1:
-                chinam.setText(R.string.ch10);
-                diachi.setImageResource(R.drawable.rooster);
-                s2=1;
-                break;
-            case 2:
-                chinam.setText(R.string.ch11);
-                diachi.setImageResource(R.drawable.dog);
-                s2=2;
-                break;
-            case 3:
-                chinam.setText(R.string.ch12);
-                diachi.setImageResource(R.drawable.pig);
-                s2=2;
-                break;
-            case 4:
-                chinam.setText(R.string.ch1);
-                diachi.setImageResource(R.drawable.rat);
-                s2=0;
-                break;
-            case 5:
-                chinam.setText(R.string.ch2);
-                diachi.setImageResource(R.drawable.ox);
-                s2=0;
-                break;
-            case 6:
-                chinam.setText(R.string.ch3);
-                diachi.setImageResource(R.drawable.tiger);
-                s2=1;
-                break;
-            case 7:
-                chinam.setText(R.string.ch4);
-                diachi.setImageResource(R.drawable.rabbit);
-                s2=1;
-                break;
-            case 8:
-                chinam.setText(R.string.ch5);
-                diachi.setImageResource(R.drawable.dragon);
-                s2=2;
-                break;
-            case 9:
-                chinam.setText(R.string.ch6);
-                diachi.setImageResource(R.drawable.snake);
-                s2=2;
-                break;
-            case 10:
-                chinam.setText(R.string.ch7);
-                diachi.setImageResource(R.drawable.horse);
-                s2=0;
-                break;
-            case 11:
-                chinam.setText(R.string.ch8);
-                diachi.setImageResource(R.drawable.goat);
-                s2=0;
-                break;
-        }
-
-        int total;
-        total = s1 + s2;
-        if (total>5) total = total - 5;
-        int menhchitiet=0;
-
-        switch (total) {
-            case 1:
-                menh.setText(R.string.kim);
-                nguhanh.setImageResource(R.drawable.kim);
-                if ((yechi==0) || (yechi==1)) menhchitiet=12;
-                if ((yechi==2) || (yechi==3)) menhchitiet=2;
-                if ((yechi==4) || (yechi==5)) menhchitiet=13;
-                if ((yechi==6) || (yechi==7)) menhchitiet=9;
-                if ((yechi==8) || (yechi==9)) menhchitiet=5;
-                if ((yechi==10) || (yechi==11)) menhchitiet=16;
-                break;
-            case 2:
-                menh.setText(R.string.thuy);
-                nguhanh.setImageResource(R.drawable.thuy);
-                if ((yechi==0) || (yechi==1)) menhchitiet=17;
-                if ((yechi==2) || (yechi==3)) menhchitiet=7;
-                if ((yechi==4) || (yechi==5)) menhchitiet=24;
-                if ((yechi==6) || (yechi==7)) menhchitiet=14;
-                if ((yechi==8) || (yechi==9)) menhchitiet=10;
-                if ((yechi==10) || (yechi==11)) menhchitiet=21;
-                break;
-            case 3:
-                menh.setText(R.string.hoa);
-                nguhanh.setImageResource(R.drawable.hoa);
-                if ((yechi==0) || (yechi==1)) menhchitiet=22;
-                if ((yechi==2) || (yechi==3)) menhchitiet=18;
-                if ((yechi==4) || (yechi==5)) menhchitiet=29;
-                if ((yechi==6) || (yechi==7)) menhchitiet=19;
-                if ((yechi==8) || (yechi==9)) menhchitiet=15;
-                if ((yechi==10) || (yechi==11)) menhchitiet=26;
-                break;
-            case 4:
-                menh.setText(R.string.tho);
-                nguhanh.setImageResource(R.drawable.tho);
-                if ((yechi==0) || (yechi==1)) menhchitiet=27;
-                if ((yechi==2) || (yechi==3)) menhchitiet=23;
-                if ((yechi==4) || (yechi==5)) menhchitiet=3;
-                if ((yechi==6) || (yechi==7)) menhchitiet=30;
-                if ((yechi==8) || (yechi==9)) menhchitiet=20;
-                if ((yechi==10) || (yechi==11)) menhchitiet=6;
-                break;
-            case 5:
-                menh.setText(R.string.moc);
-                nguhanh.setImageResource(R.drawable.moc);
-                if ((yechi==0) || (yechi==1)) menhchitiet=1;
-                if ((yechi==2) || (yechi==3)) menhchitiet=28;
-                if ((yechi==4) || (yechi==5)) menhchitiet=8;
-                if ((yechi==6) || (yechi==7)) menhchitiet=4;
-                if ((yechi==8) || (yechi==9)) menhchitiet=25;
-                if ((yechi==10) || (yechi==11)) menhchitiet=11;
-                break;
-        }
-
-        switch (menhchitiet) {
-            case 1: menhchi.setText(R.string.hh1); break;
-            case 2: menhchi.setText(R.string.hh2); break;
-            case 3: menhchi.setText(R.string.hh3); break;
-            case 4: menhchi.setText(R.string.hh4); break;
-            case 5: menhchi.setText(R.string.hh5); break;
-            case 6: menhchi.setText(R.string.hh6); break;
-            case 7: menhchi.setText(R.string.hh7); break;
-            case 8: menhchi.setText(R.string.hh8); break;
-            case 9: menhchi.setText(R.string.hh9); break;
-            case 10: menhchi.setText(R.string.hh10); break;
-            case 11: menhchi.setText(R.string.hh11); break;
-            case 12: menhchi.setText(R.string.hh12); break;
-            case 13: menhchi.setText(R.string.hh13); break;
-            case 14: menhchi.setText(R.string.hh14); break;
-            case 15: menhchi.setText(R.string.hh15); break;
-            case 16: menhchi.setText(R.string.hh16); break;
-            case 17: menhchi.setText(R.string.hh17); break;
-            case 18: menhchi.setText(R.string.hh18); break;
-            case 19: menhchi.setText(R.string.hh19); break;
-            case 20: menhchi.setText(R.string.hh20); break;
-            case 21: menhchi.setText(R.string.hh21); break;
-            case 22: menhchi.setText(R.string.hh22); break;
-            case 23: menhchi.setText(R.string.hh23); break;
-            case 24: menhchi.setText(R.string.hh24); break;
-            case 25: menhchi.setText(R.string.hh25); break;
-            case 26: menhchi.setText(R.string.hh26); break;
-            case 27: menhchi.setText(R.string.hh27); break;
-            case 28: menhchi.setText(R.string.hh28); break;
-            case 29: menhchi.setText(R.string.hh29); break;
-            case 30: menhchi.setText(R.string.hh30); break;
-        }
-
         int mo = d[1];
-        int mocan = (ye*12+mo+3)%10;
-        switch (mocan) {
-            case 0: canthang.setText(R.string.c1); break;
-            case 1: canthang.setText(R.string.c2); break;
-            case 2: canthang.setText(R.string.c3); break;
-            case 3: canthang.setText(R.string.c4); break;
-            case 4: canthang.setText(R.string.c5); break;
-            case 5: canthang.setText(R.string.c6); break;
-            case 6: canthang.setText(R.string.c7); break;
-            case 7: canthang.setText(R.string.c8); break;
-            case 8: canthang.setText(R.string.c9); break;
-            case 9: canthang.setText(R.string.c10); break;
-        }
-        switch (mo) {
-            case 1: chithang.setText(R.string.ch3); break;
-            case 2: chithang.setText(R.string.ch4); break;
-            case 3: chithang.setText(R.string.ch5); break;
-            case 4: chithang.setText(R.string.ch6); break;
-            case 5: chithang.setText(R.string.ch7); break;
-            case 6: chithang.setText(R.string.ch8); break;
-            case 7: chithang.setText(R.string.ch9); break;
-            case 8: chithang.setText(R.string.ch10); break;
-            case 9: chithang.setText(R.string.ch11); break;
-            case 10: chithang.setText(R.string.ch12); break;
-            case 11: chithang.setText(R.string.ch1); break;
-            case 12: chithang.setText(R.string.ch2); break;
-        }
+        int dat = d[0];
 
-        int dcan = Calculation.INT(Calculation.UniversalToJD(da,m,y)+9.5) % 10;
-        int dchi = Calculation.INT(Calculation.UniversalToJD(da,m,y) + 1.5) % 12;
+        int checka = amLich.checkLeapYear(ye);
 
-        switch (dcan) {
-            case 0: canngay.setText(R.string.c1); break; //Giap
-            case 1: canngay.setText(R.string.c2); break; //At
-            case 2: canngay.setText(R.string.c3); break; //Binh
-            case 3: canngay.setText(R.string.c4); break; //Dinh
-            case 4: canngay.setText(R.string.c5); break; //Mau
-            case 5: canngay.setText(R.string.c6); break; //Ky
-            case 6: canngay.setText(R.string.c7); break; //Canh
-            case 7: canngay.setText(R.string.c8); break; //Tan
-            case 8: canngay.setText(R.string.c9); break; //Nham
-            case 9: canngay.setText(R.string.c10); break; //Quy
-        }
+        amLich.findCanChiNam(ye);
 
-        switch (dchi) {
-            case 0: {
-                chingay.setText(R.string.ch1);
-                break;
-            }
-            case 1: {
-                chingay.setText(R.string.ch2);
-                break;
-            }
-            case 2: {
-                chingay.setText(R.string.ch3);
-                break;
-            }
-            case 3: {
-                chingay.setText(R.string.ch4);
-                break;
-            }
-            case 4: {
-                chingay.setText(R.string.ch5);
-                break;
-            }
-            case 5: {
-                chingay.setText(R.string.ch6);
-                break;
-            }
-            case 6: {
-                chingay.setText(R.string.ch7);
-                break;
-            }
-            case 7: {
-                chingay.setText(R.string.ch8);
-                break;
-            }
-            case 8: {
-                chingay.setText(R.string.ch9);
-                break;
-            }
-            case 9: {
-                chingay.setText(R.string.ch10);
-                break;
-            }
-            case 10: {
-                chingay.setText(R.string.ch11);
-                break;
-            }
-            case 11: {
-                chingay.setText(R.string.ch12);
-                break;
-            }
-        }
+        amLich.findCanThang(mo,ye);
+        amLich.findChiThang(mo);
 
-        if ((dcan==0) || (dcan==5)) {
-            if (gio==1) cangio.setText(R.string.c1);
-            if (gio==2) cangio.setText(R.string.c2);
-            if (gio==3) cangio.setText(R.string.c3);
-            if (gio==4) cangio.setText(R.string.c4);
-            if (gio==5) cangio.setText(R.string.c5);
-            if (gio==6) cangio.setText(R.string.c6);
-            if (gio==7) cangio.setText(R.string.c7);
-            if (gio==8) cangio.setText(R.string.c8);
-            if (gio==9) cangio.setText(R.string.c9);
-            if (gio==10) cangio.setText(R.string.c10);
-            if (gio==11) cangio.setText(R.string.c1);
-            if (gio==12) cangio.setText(R.string.c2);
-        }
+        amLich.findCanNgay(da, m, y);
+        amLich.findChiNgay(da, m, y);
+        amLich.findChiNgayduongLich(da, m, y);
 
-        if ((dcan==1) || (dcan==6)) {
-            if (gio==1) cangio.setText(R.string.c3);
-            if (gio==2) cangio.setText(R.string.c4);
-            if (gio==3) cangio.setText(R.string.c5);
-            if (gio==4) cangio.setText(R.string.c6);
-            if (gio==5) cangio.setText(R.string.c7);
-            if (gio==6) cangio.setText(R.string.c8);
-            if (gio==7) cangio.setText(R.string.c9);
-            if (gio==8) cangio.setText(R.string.c10);
-            if (gio==9) cangio.setText(R.string.c1);
-            if (gio==10) cangio.setText(R.string.c2);
-            if (gio==11) cangio.setText(R.string.c3);
-            if (gio==12) cangio.setText(R.string.c4);
-        }
+        amLich.findCanGio(gio, da, m, y);
+        amLich.findChiGio(gio);
 
-        if ((dcan==2) || (dcan==7)) {
-            if (gio==1) cangio.setText(R.string.c5);
-            if (gio==2) cangio.setText(R.string.c6);
-            if (gio==3) cangio.setText(R.string.c7);
-            if (gio==4) cangio.setText(R.string.c8);
-            if (gio==5) cangio.setText(R.string.c9);
-            if (gio==6) cangio.setText(R.string.c10);
-            if (gio==7) cangio.setText(R.string.c1);
-            if (gio==8) cangio.setText(R.string.c2);
-            if (gio==9) cangio.setText(R.string.c3);
-            if (gio==10) cangio.setText(R.string.c4);
-            if (gio==11) cangio.setText(R.string.c5);
-            if (gio==12) cangio.setText(R.string.c6);
-        }
 
-        if ((dcan==3) || (dcan==8)) {
-            if (gio==1) cangio.setText(R.string.c7);
-            if (gio==2) cangio.setText(R.string.c8);
-            if (gio==3) cangio.setText(R.string.c9);
-            if (gio==4) cangio.setText(R.string.c10);
-            if (gio==5) cangio.setText(R.string.c1);
-            if (gio==6) cangio.setText(R.string.c2);
-            if (gio==7) cangio.setText(R.string.c3);
-            if (gio==8) cangio.setText(R.string.c4);
-            if (gio==9) cangio.setText(R.string.c5);
-            if (gio==10) cangio.setText(R.string.c6);
-            if (gio==11) cangio.setText(R.string.c7);
-            if (gio==12) cangio.setText(R.string.c8);
-        }
+        /*Fetch Result*/
 
-        if ((dcan==4) || (dcan==9)) {
-            if (gio==1) cangio.setText(R.string.c9);
-            if (gio==2) cangio.setText(R.string.c10);
-            if (gio==3) cangio.setText(R.string.c1);
-            if (gio==4) cangio.setText(R.string.c2);
-            if (gio==5) cangio.setText(R.string.c3);
-            if (gio==6) cangio.setText(R.string.c4);
-            if (gio==7) cangio.setText(R.string.c5);
-            if (gio==8) cangio.setText(R.string.c6);
-            if (gio==9) cangio.setText(R.string.c7);
-            if (gio==10) cangio.setText(R.string.c8);
-            if (gio==11) cangio.setText(R.string.c9);
-            if (gio==12) cangio.setText(R.string.c10);
-        }
+        /*Duong Lich*/
 
-        if (gio==1) chigio.setText(R.string.ch1);
-        if (gio==2) chigio.setText(R.string.ch2);
-        if (gio==3) chigio.setText(R.string.ch3);
-        if (gio==4) chigio.setText(R.string.ch4);
-        if (gio==5) chigio.setText(R.string.ch5);
-        if (gio==6) chigio.setText(R.string.ch6);
-        if (gio==7) chigio.setText(R.string.ch7);
-        if (gio==8) chigio.setText(R.string.ch8);
-        if (gio==9) chigio.setText(R.string.ch9);
-        if (gio==10) chigio.setText(R.string.ch10);
-        if (gio==11) chigio.setText(R.string.ch11);
-        if (gio==12) chigio.setText(R.string.ch12);
+        leapd.setText(checkd);
+        thu.setText(day);
+        star.setImageResource(duongLich.imgSrc);
+        st.setText(duongLich.star);
+        ele.setText(duongLich.ele);
+        pla.setText(duongLich.st);
+        pla1.setText(duongLich.st1);
+        ang1.setText(duongLich.ang1);
+        ang.setText(duongLich.ang);
+        tc.setText(duongLich.tc);
+        tcr.setText(duongLich.tcr);
+
+        qh11.setText(duongLich.qh11);
+        qh12.setText(duongLich.qh12);
+
+        qh21.setText(duongLich.qh21);
+        qh22.setText(duongLich.qh22);
+
+        qh31.setText(duongLich.qh31);
+
+        /*Am Lich*/
+
+        leapa.setText(checka);
+
+        solar.setText(da+"/"+m+"/"+y);
+        lunar.setText(dat+"/"+mo+"/"+ye);
+
+        cannam.setText(amLich.cannam);
+        chinam.setText(amLich.chinam);
+        diachi.setImageResource(amLich.chinamsrc);
+
+        nguhanh.setImageResource(amLich.nguHanhsrc);
+        menh.setText(amLich.menh);
+        menhchi.setText(amLich.menhchitiet);
+
+        canthang.setText(amLich.canthang);
+        chithang.setText(amLich.chithang);
+
+        canngay.setText(amLich.canngay);
+        chingay.setText(amLich.chingay);
+
+        cangio.setText(amLich.cangio);
+        chigio.setText(amLich.chigio);
 
 
         TextView day1 = findViewById(R.id.thu);
-        int X=calcu.MOD((int)(Calculation.UniversalToJD(da,m,y)+2.5), 7);
-        switch (X){
-            case 7: day1.setText(R.string.sat); break;
-            case 1: day1.setText(R.string.sun); break;
-            case 2: day1.setText(R.string.mon); break;
-            case 3: day1.setText(R.string.tue); break;
-            case 4: day1.setText(R.string.wed); break;
-            case 5: day1.setText(R.string.thu); break;
-            case 6: day1.setText(R.string.fri); break;
-        }
 
-        /*Cung Hoàng Đạo*/
-
-        ImageView star = findViewById(R.id.starr);
-        TextView st = findViewById(R.id.sta);
-        TextView ele = findViewById(R.id.ele);
-        TextView pla = findViewById(R.id.pla);
-        TextView pla1 = findViewById(R.id.pla1);
-        TextView ang = findViewById(R.id.ang);
-        TextView ang1 = findViewById(R.id.ang1);
-
-        TextView nhom = findViewById(R.id.nhom);
-        TextView han = findViewById(R.id.hanh);
-        TextView than = findViewById(R.id.than);
-
-        nhom.setText(R.string.nh);
-        han.setText(R.string.ha);
-        than.setText(R.string.th);
-
-        TextView tc = findViewById(R.id.tc);
-        TextView tcr = findViewById(R.id.tcr);
-
-        TextView qh11 = findViewById(R.id.qh11);
-        TextView qh12 = findViewById(R.id.qh12);
-
-        TextView qh21 = findViewById(R.id.qh21);
-        TextView qh22 = findViewById(R.id.qh22);
-
-        TextView qh31 = findViewById(R.id.qh31);
-
-        qh11.setText(R.string.qh1);
-        qh12.setText(R.string.qh2);
-        qh31.setText(R.string.qh3);
-
-//        Calculation.DuongLich a = Calculation.findSolarInformation(da,m);
-//        star.setImageResource(a.imgSrc);
-//        ele.setText(a.ele);
-//        st.setText(a.star);
 
     }
 }
