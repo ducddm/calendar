@@ -10,8 +10,8 @@
     <string name="menu3">Người phát triển</string>
 
     <!--Năm-->
-    <string name="nhuand">Năm nhuận dương lịch</string>
-    <string name="nhuana">Năm nhuận âm lịch</string>
+    <string name="nhuand"><i>Năm nhuận dương lịch</i></string>
+    <string name="nhuana"><i>Năm nhuận âm lịch</i></string>
 
     <!--Hour-->
     <string name="hour1">Giờ Tí</string>
@@ -36,6 +36,15 @@
     <string name="thu">Thứ 5</string>
     <string name="fri">Thứ 6</string>
 
+    <!--DayInShort-->
+    <string name="sat1">T7</string>
+    <string name="sun1">CN</string>
+    <string name="mon1">T2</string>
+    <string name="tue1">T3</string>
+    <string name="wed1">T4</string>
+    <string name="thu1">T5</string>
+    <string name="fri1">T6</string>
+
     <!--Star-->
     <string name="s1">Cung Ma Kết</string>
     <string name="s2">Cung Bảo Bình</string>
@@ -51,7 +60,7 @@
     <string name="s12">Cung Nhân Mã</string>
 
     <!--Can-->
-    <string name="c1">Giáp</string>
+    <string name="c1" translatable="false">Giáp</string>
     <string name="c2">Ất</string>
     <string name="c3">Bính</string>
     <string name="c4">Đinh</string>
@@ -78,7 +87,7 @@
 
     <!--Giờ Hoàng Đạo-->
 
-    <string name="hh">Giờ Hoàng Đạo</string>
+    <string name="hh"><b>Giờ Hoàng Đạo</b></string>
     <string name="h1">Tý, Sửu, Thìn, Tị, Mùi, Tuất</string>
     <string name="h2">Tý, Dần, Mão, Ngọ, Mùi, Dậu</string>
     <string name="h3">Dần, Thìn, Tị, Thân, Dậu, Hợi</string>
@@ -88,14 +97,16 @@
 
 
     <!--General-->
-    <string name="y">Năm</string>
-    <string name="m">Tháng</string>
-    <string name="d">Ngày</string>
-    <string name="h">Giờ</string>
-    <string name="nh">Nhóm nguyên tố</string>
-    <string name="ha">Hành tinh quản chiếu</string>
-    <string name="th">Thần bảo hộ</string>
-    <string name="menh">Mệnh</string>
+    <string name="y"><b>Năm</b></string>
+    <string name="m"><b>Tháng</b></string>
+    <string name="d"><b>Ngày</b></string>
+    <string name="h"><b>Giờ</b></string>
+    <string name="nh"><b>Nhóm nguyên tố</b></string>
+    <string name="ha"><b>Hành tinh quản chiếu</b></string>
+    <string name="th"><b>Thần bảo hộ</b></string>
+    <string name="menh"><b>Mệnh</b></string>
+    <string name="dt"><b>Đặc tính chòm sao: </b></string>
+    <string name="tinhcach"><b>Tính cách: </b></string>
     <!--Button-->
     <string name="button">Chọn</string>
 
@@ -135,9 +146,6 @@
     <!--Giá trị rỗng-->
     <string name="empty"></string>
 
-    <!--Tiêu đề tính cách-->
-    <string name="dt">Đặc tính chòm: </string>
-    <string name="tinhcach">Tính cách: </string>
 
     <!--Tính chất-->
     <string name="tc1">Thống lĩnh</string>
@@ -148,10 +156,10 @@
     <string name="tc33">Dễ thay đổi, hiếu động, khả năng thích nghi cao, không cứng nhắc, dễ tiếp thu</string>
 
     <!--Mối quan hệ-->
-    <string name="va">và</string>
-    <string name="qh1">Phát huy tốt nhất khi ở cùng với</string>
-    <string name="qh2">Có khoảng thời gian khó khăn nếu ở cùng với</string>
-    <string name="qh3">Chòm sao tương hỗ</string>
+    <string name="va"><i>và</i></string>
+    <string name="qh1"><i>Phát huy tốt nhất khi ở cùng với</i></string>
+    <string name="qh2"><i>Có khoảng thời gian khó khăn nếu ở cùng với</i></string>
+    <string name="qh3"><i>Chòm sao tương hỗ:</i></string>
 
     <!--Sao viết tắt-->
     <string name="sa1">Ma Kết</string>
@@ -222,4 +230,69 @@
         <item>Giờ Tuất (19h-21h)</item>
         <item>Giờ Hợi (21h-23h)</item>
     </string-array>
+
+    <!--24 tiét khi-->
+    <string name="tk1">Lập xuân</string>
+    <string name="tk2">Vũ thủy</string>
+    <string name="tk3">Kinh trập</string>
+    <string name="tk4">Xuân phân</string>
+    <string name="tk5">Thanh minh</string>
+    <string name="tk6">Cốc vũ</string>
+    <string name="tk7">Lập hạ</string>
+    <string name="tk8">Tiểu mãn</string>
+    <string name="tk9">Mang chủng</string>
+    <string name="tk10">Hạ chí</string>
+    <string name="tk11">Tiểu thử</string>
+    <string name="tk12">Đại thử</string>
+    <string name="tk13">Lập thu</string>
+    <string name="tk14">Xử thử</string>
+    <string name="tk15">Bạch lộ</string>
+    <string name="tk16">Thu phân</string>
+    <string name="tk17">Hàn lộ</string>
+    <string name="tk18">Sương giáng</string>
+    <string name="tk19">Lập đông</string>
+    <string name="tk20">Tiểu tuyết</string>
+    <string name="tk21">Đại tuyết</string>
+    <string name="tk22">Đông chí</string>
+    <string name="tk23">Tiểu hàn</string>
+    <string name="tk24">Đại hàn</string>
+
+    <!--24 tiết khí chi tiết-->
+    <string name="tk1a">Đầu xuân</string>
+    <string name="tk2a">Mưa ẩm</string>
+    <string name="tk3a">Sâu nở</string>
+    <string name="tk4a">Giữa xuân</string>
+    <string name="tk5a">Trời trong sáng</string>
+    <string name="tk6a">Mưa rào</string>
+    <string name="tk7a">Bắt đầu mùa hè</string>
+    <string name="tk8a">Lúa xanh</string>
+    <string name="tk9a">Lúa trổ</string>
+    <string name="tk10a">Giữa hè</string>
+    <string name="tk11a">Nóng nhẹ</string>
+    <string name="tk12a">Nóng oi</string>
+    <string name="tk13a">Đầu thu</string>
+    <string name="tk14a">Mưa ngâu</string>
+    <string name="tk15a">Nắng nhạt</string>
+    <string name="tk16a">Giữa thu</string>
+    <string name="tk17a">Mát mẻ</string>
+    <string name="tk18a">Sương rơi</string>
+    <string name="tk19a">Đầu đông</string>
+    <string name="tk20a">Tuyết nhẹ</string>
+    <string name="tk21a">Tuyết lớn</string>
+    <string name="tk22a">Giữa đông</string>
+    <string name="tk23a">Rét nhẹ</string>
+    <string name="tk24a">Rét đậm</string>
+
+    <!--Weather-->
+    <string name="description">Description</string>
+    <string name="sunny">Trời nắng</string>
+    <string name="cloudy">Mây</string>
+    <string name="heavy_rain">Mưa to</string>
+    <string name="snow">Tuyết</string>
+    <string name="storm">Sấm chớp</string>
+    <string name="rain">Mưa</string>
+    <string name="foggy">Sương mù</string>
+
+    <!--Place-->
+    <string name="hn">Hà Nội</string>
 </resources>

@@ -444,7 +444,7 @@ public class DuongLich {
 
 
     public int findDay(int d, int m, int y) {
-        int X= calculation.MOD((int)(calculation.UniversalToJD(d,m,y)+2.5), 7);
+        int X= calculation.MOD((int)(calculation.jdFromDate(d,m,y)+2.5), 7);
         int date = 0;
         switch (X){
             case 7: date = R.string.sat; break;

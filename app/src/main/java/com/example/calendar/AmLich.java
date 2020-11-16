@@ -218,7 +218,7 @@ public class AmLich {
     }
 
     public  void findCanNgay(int d, int m, int y) {
-        int dcan = calculation.INT(calculation.UniversalToJD(d,m,y)+9.5) % 10;
+        int dcan = calculation.INT(calculation.jdFromDate(d,m,y)+9.5) % 10;
         switch (dcan) {
             case 0: this.canngay =(R.string.c1); break;
             case 1: this.canngay =(R.string.c2); break;
@@ -234,7 +234,7 @@ public class AmLich {
     }
 
     public  void findChiNgay(int d, int m, int y) {
-        int dchi = calculation.INT(calculation.UniversalToJD(d,m,y) + 1.5) % 12;
+        int dchi = calculation.INT(calculation.jdFromDate(d,m,y) + 1.5) % 12;
         switch (dchi) {
             case 0: {
                 this.chingay =(R.string.ch1);
@@ -288,7 +288,7 @@ public class AmLich {
     }
 
     public  void findChiNgayduongLich(int d, int m, int y) {
-        int dchi = calculation.INT(calculation.UniversalToJD(d,m,y) + 1.5) % 12;
+        int dchi = calculation.INT(calculation.jdFromDate(d,m,y) + 1.5) % 12;
         switch (dchi) {
             case 0: {
                 this.chingaysrc =(R.drawable.rat);
@@ -342,8 +342,8 @@ public class AmLich {
     }
 
     public  void findCanGio(int h, int d, int m, int y){
-        int dcan = calculation.INT(calculation.UniversalToJD(d,m,y)+9.5) % 10;
-        int dchi = calculation.INT(calculation.UniversalToJD(d,m,y) + 1.5) % 12;
+        int dcan = calculation.INT(calculation.jdFromDate(d,m,y)+9.5) % 10;
+        int dchi = calculation.INT(calculation.jdFromDate(d,m,y) + 1.5) % 12;
         if ((dcan==0) || (dcan==5)) {
             if ((h==23) || (h==0)) this.cangio = (R.string.c1);
             if ((h==1) || (h==2)) this.cangio = (R.string.c2);
@@ -439,7 +439,7 @@ public class AmLich {
     }
 
     public  void findGioHoangDao(int d, int m, int y) {
-        int dchi = calculation.INT(calculation.UniversalToJD(d,m,y) + 1.5) % 12;
+        int dchi = calculation.INT(calculation.jdFromDate(d,m,y) + 1.5) % 12;
         if ((dchi==2) || (dchi==8)) this.luckyhour = (R.string.h1);
         if ((dchi==3) || (dchi==9)) this.luckyhour = (R.string.h2);
         if ((dchi==4) || (dchi==10)) this.luckyhour = (R.string.h3);

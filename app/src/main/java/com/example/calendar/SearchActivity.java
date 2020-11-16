@@ -118,6 +118,8 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
 
         /*Constant Variable*/
 
+        int tz = 7;
+
         /*Duong Lich*/
         TextView nhom = findViewById(R.id.nhom);
         TextView han = findViewById(R.id.hanh);
@@ -228,7 +230,7 @@ public class SearchActivity extends AppCompatActivity implements AdapterView.OnI
 
         /*Am Lich*/
 
-        int d[]=calcu.Solar2Lunar(da,m,y);
+        int d[]=calcu.convertSolar2Lunar(da,m,y,tz);
 
         int ye = d[2];
         int mo = d[1];
