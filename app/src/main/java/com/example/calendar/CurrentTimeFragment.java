@@ -50,20 +50,40 @@ public class CurrentTimeFragment extends Fragment {
         final Calendar c = Calendar.getInstance();
 
         /*Declare Variable*/
-        int y = c.get(Calendar.YEAR);
-        int m = c.get(Calendar.MONTH) + 1;
-        int d = c.get(Calendar.DATE);
-        int hour = c.get(Calendar.HOUR_OF_DAY);
-
+        int y, m, d, hour;
+        int y_c, m_c, d_c; //Current date in solar calendar
+        int da, mo, ye;
         int tz = 7;
 
+        y = c.get(Calendar.YEAR);
+        m = c.get(Calendar.MONTH) + 1;
+        d = c.get(Calendar.DATE);
+        hour = c.get(Calendar.HOUR_OF_DAY);
+
         /*Calculate*/
+        if (hour==23) {
+            c.add(Calendar.DATE, 1);
+            y_c = c.get(Calendar.YEAR);
+            m_c = c.get(Calendar.MONTH) + 1;
+            d_c = c.get(Calendar.DATE);
 
-        int day[] = Calculation.convertSolar2Lunar(d,m,y,tz);
+            int dayTomorrow[] = Calculation.convertSolar2Lunar(d_c,m_c,y_c,tz);
+            da = dayTomorrow[0];
+            mo = dayTomorrow[1];
+            ye = dayTomorrow[2];
+        } else {
 
-        int da = day[0];
-        int mo = day[1];
-        int ye = day[2];
+            int day[] = Calculation.convertSolar2Lunar(d,m,y,tz);
+
+            da = day[0];
+            mo = day[1];
+            ye = day[2];
+
+            y_c = y;
+            m_c = m;
+            d_c = d;
+        }
+
 
         duongLich.findSolarInformation(d,m);
         int dayId = duongLich.findDay(d,m,y);
@@ -77,14 +97,14 @@ public class CurrentTimeFragment extends Fragment {
         amLich.findCanThang(mo, ye);
         amLich.findChiThang(mo);
 
-        amLich.findCanNgay(d, m, y);
-        amLich.findChiNgay(d, m, y);
-        amLich.findChiNgayduongLich(d, m, y);
+        amLich.findCanNgay(d_c, m_c, y_c);
+        amLich.findChiNgay(d_c, m_c, y_c);
+        amLich.findChiNgayduongLich(d_c, m_c, y_c);
 
-        amLich.findCanGio(hour, d, m, y);
+        amLich.findCanGio(hour, d_c, m_c, y_c);
         amLich.findChiGio(hour);
 
-        amLich.findGioHoangDao(d, m, y);
+        amLich.findGioHoangDao(d_c, m_c, y_c);
 
         /*Find place to put result*/
         LinearLayout currentTime = view.findViewById(R.id.currentTime);
@@ -119,7 +139,7 @@ public class CurrentTimeFragment extends Fragment {
 
         /*Fetch Result*/
 
-        gg.setText(d + "/" + m + "/" + y);
+        gg.setText(d_c + "/" + m_c + "/" + y_c);
 
         leapd.setText(leaps);
         leapa.setText(leapl);

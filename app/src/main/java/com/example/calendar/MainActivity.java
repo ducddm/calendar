@@ -20,10 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle abdt;
 
-//    Calculation calculation;
-//    DuongLich duongLich = new DuongLich();
-//    AmLich amLich = new AmLich();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
